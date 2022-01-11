@@ -96,7 +96,8 @@ workflows:
 
 jobs:
   machine-job:
-    machine: true
+    machine:
+      image: ubuntu-1604:202007-01
     steps:
       - docker/check:
           docker-username: DOCKERHUB_LOGIN  # DOCKER_LOGIN is the default value, if it exists, it automatically would be used.
@@ -115,7 +116,8 @@ or with the CLI:
 version: 2
 jobs:
   build:
-    machine: true
+    machine:
+      image: ubuntu-1604:202007-01
     working_directory: ~/my_app
     steps:
       # Docker is preinstalled, along with docker-compose
