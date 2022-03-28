@@ -29,6 +29,7 @@ window.OptimizelyClient.getVariationName({
   experimentContainer: 'body',
   guestExperiment: false,
 }).then((variation) => {
+  console.log("test");
   addNewBadgeToSidebar();
   if (variation === 'treatment') {
     // console.log('IN TREATMENT GROUP');
