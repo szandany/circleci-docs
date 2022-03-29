@@ -6,7 +6,7 @@
  **/
 function addNewBadgeToSidebar() {
   const isGettingStartedPage =
-    window.location.pathname == '/ts-dd-454-preview/2.0/getting-started/'
+    window.location.pathname == '/ts-dd-454-preview/2.0/getting-started/';
 
   const NEW_SIDEBAR_HTML = `
     <a class="${isGettingStartedPage ? 'active' : ''}"
@@ -18,7 +18,9 @@ function addNewBadgeToSidebar() {
     </a>
 `;
 
-  $("li > a[href='/ts-dd-454-preview/2.0/getting-started/']").replaceWith(NEW_SIDEBAR_HTML);
+  $("li > a[href='/ts-dd-454-preview/2.0/getting-started/']").replaceWith(
+    NEW_SIDEBAR_HTML,
+  );
 }
 
 // NOTE: experimentContainer can be updated once we have the other components of this experiment created and in place
@@ -28,7 +30,6 @@ window.OptimizelyClient.getVariationName({
   experimentContainer: 'body',
   guestExperiment: false,
 }).then((variation) => {
-  console.log("test");
   addNewBadgeToSidebar();
   if (variation === 'treatment') {
     // console.log('IN TREATMENT GROUP');
