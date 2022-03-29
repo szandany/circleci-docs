@@ -6,8 +6,7 @@
  **/
 function addNewBadgeToSidebar() {
   const isGettingStartedPage =
-    window.location.pathname == '/docs/2.0/getting-started/' ||
-    window.location.pathname == '/docs/ja/2.0/getting-started/';
+    window.location.pathname == '/ts-dd-454-preview/2.0/getting-started/'
 
   const NEW_SIDEBAR_HTML = `
     <a class="${isGettingStartedPage ? 'active' : ''}"
@@ -19,7 +18,7 @@ function addNewBadgeToSidebar() {
     </a>
 `;
 
-  $("li > a[href='/docs/2.0/getting-started/']").replaceWith(NEW_SIDEBAR_HTML);
+  $("li > a[href='/ts-dd-454-preview/2.0/getting-started/']").replaceWith(NEW_SIDEBAR_HTML);
 }
 
 // NOTE: experimentContainer can be updated once we have the other components of this experiment created and in place
