@@ -63,7 +63,6 @@ window.OptimizelyClient.getVariationName({
 
     // Add tracking to all links on page
     const links = Array.from($('.treatment').find($('a')));
-    console.log(links);
     links.forEach((link, i) => {
       link.addEventListener('click', () => {
         window.AnalyticsClient.trackAction(
