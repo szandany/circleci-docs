@@ -13,15 +13,15 @@ Use the tutorials, samples, how-to, and reference documentation to learn CircleC
 
 <!--Do not translate: Experiment Code for https://circleci.atlassian.net/browse/DD-455 -->
 <!-- we need to use "capture" because we can't use `{{site.baseurl}}` in includes. -->
-{% capture nodeLink %}{{site.baseurl}}/2.0/language-javascript{% endcapture %}
-{% capture nodeLogo %}{{site.baseurl}}/assets/img/compass/nodejs.svg{% endcapture %}
-{% capture cciLink %}{{site.baseurl}}/2.0/getting-started{% endcapture %}
-{% capture cciLogo %}{{site.baseurl}}/assets/img/compass/circle-logo.svg{% endcapture %}
-{% capture pyLink %}{{site.baseurl}}/2.0/language-python{% endcapture %}
-{% capture pyLogo %}{{site.baseurl}}/assets/img/compass/python.svg{% endcapture %}
-{% capture dotLink %}{{site.baseurl}}/2.0/tutorials{% endcapture %}
-{% capture dotLogo %}{{site.baseurl}}/assets/img/compass/more.svg{% endcapture %}
-
+{% capture nodeLink %}DD-456/finalize-getting-started-experiment-preview/2.0/language-javascript{% endcapture %}
+{% capture nodeLogo %}DD-456/finalize-getting-started-experiment-preview/assets/img/compass/nodejs.svg{% endcapture %}
+{% capture cciLink %}DD-456/finalize-getting-started-experiment-preview/2.0/getting-started{% endcapture %}
+{% capture cciLogo %}DD-456/finalize-getting-started-experiment-preview/assets/img/compass/circle-logo.svg{% endcapture %}
+{% capture pyLink %}DD-456/finalize-getting-started-experiment-preview/2.0/language-python{% endcapture %}
+{% capture pyLogo %}DD-456/finalize-getting-started-experiment-preview/assets/img/compass/python.svg{% endcapture %}
+{% capture dotLink %}DD-456/finalize-getting-started-experiment-preview/2.0/tutorials{% endcapture %}
+{% capture dotLogo %}DD-456/finalize-getting-started-experiment-preview/assets/img/compass/more.svg{% endcapture %}
+jekyll/assets/img/compass/nodejs.svg
 <div class="getting-started-experiment-badges">
   <h2> Example and Guides</h2>
     <p>Get started quickly: follow step-by-step <a href="{{site.baseurl}}/2.0/tutorials/">guides</a> or explore a sample app.</p>

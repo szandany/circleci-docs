@@ -2,19 +2,22 @@
 
 function addNewBadgeToSidebar() {
   const isGettingStartedPage =
-    window.location.pathname == '/docs/2.0/getting-started/';
+    window.location.pathname ==
+    '/DD-456/finalize-getting-started-experiment-preview/2.0/getting-started/';
 
   const NEW_SIDEBAR_HTML = `
     <a class="${isGettingStartedPage ? 'active' : ''}"
        style="display: flex; align-items: center"
-       href="/docs/2.0/getting-started/"
+       href="/DD-456/finalize-getting-started-experiment-preview/2.0/getting-started/"
        data-section="getting-started" data-proofer-ignore="">
       <span>Quickstart Guide</span>
       <span class="getting-started-new-badge"> NEW </span>
     </a>
 `;
 
-  $("li > a[href='/docs/2.0/getting-started/']").replaceWith(NEW_SIDEBAR_HTML);
+  $(
+    "li > a[href='/DD-456/finalize-getting-started-experiment-preview/2.0/getting-started/']",
+  ).replaceWith(NEW_SIDEBAR_HTML);
 }
 
 function showHomePageBadges() {
@@ -36,7 +39,7 @@ window.OptimizelyClient.getVariationName({
     if (
       window.location.pathname === '/docs/2.0/getting-started/' ||
       window.location.pathname ===
-        '/DD-456/finalize-getting-started-experiment-preview/2.0/getting-started/'
+      '/DD-456/finalize-getting-started-experiment-preview/2.0/getting-started/'
     ) {
       const articleContainer = $('.quickstart-guide');
       articleContainer.addClass('getting-started-full-width');
