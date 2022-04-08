@@ -37,7 +37,7 @@ jekyll/assets/img/compass/nodejs.svg
 <!-- End: Experiment code. -->
 
 <div class="row loading-deferred">
-  <div class="treatment col-xs-12">
+  <!-- <div class="treatment col-xs-12">
     <span id="homepage-guide-links"><h2>Examples and Guides</h2><img src="{{ site.baseurl }}/assets/img/compass/new.svg" alt="New"></span>
     <p>Get started quickly: follow step-by-step <a href="{{site.baseurl}}/2.0/tutorials/">guides</a> or explore a sample app.</p>
   </div>
@@ -63,7 +63,7 @@ jekyll/assets/img/compass/nodejs.svg
   </div>
   <div class="treatment col-xs-12">
     <hr />
-  </div>
+  </div> -->
   <div class="col-xs-12 col-sm-6">
     <h2>Get Started</h2>
     <p>Get started with CircleCI automated builds.</p>
