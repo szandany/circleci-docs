@@ -21,7 +21,6 @@ Use the tutorials, samples, how-to, and reference documentation to learn CircleC
 {% capture pyLogo %}/DD-456/finalize-getting-started-experiment-preview/assets/img/compass/python.svg{% endcapture %}
 {% capture dotLink %}/DD-456/finalize-getting-started-experiment-preview/2.0/tutorials{% endcapture %}
 {% capture dotLogo %}/DD-456/finalize-getting-started-experiment-preview/assets/img/compass/more.svg{% endcapture %}
-jekyll/assets/img/compass/nodejs.svg
 <div class="getting-started-experiment-badges">
   <h2> Example and Guides</h2>
     <p>Get started quickly: follow step-by-step <a href="{{site.baseurl}}/2.0/tutorials/">guides</a> or explore a sample app.</p>
