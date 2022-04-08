@@ -23,9 +23,9 @@ function addNewBadgeToSidebar() {
 function showHomePageBadges() {
   const isGettingStartedPage =
     window.location.pathname ==
-    '/DD-456/finalize-getting-started-experiment-preview/' ||
+      '/DD-456/finalize-getting-started-experiment-preview/' ||
     window.location.pathname ==
-    '/DD-456/finalize-getting-started-experiment-preview/?force-all';
+      '/DD-456/finalize-getting-started-experiment-preview/?force-all';
 
   if (isGettingStartedPage) {
     $('.getting-started-experiment-badges').show();
@@ -43,7 +43,7 @@ window.OptimizelyClient.getVariationName({
     if (
       window.location.pathname === '/docs/2.0/getting-started/' ||
       window.location.pathname ===
-      '/DD-456/finalize-getting-started-experiment-preview/2.0/getting-started/'
+        '/DD-456/finalize-getting-started-experiment-preview/2.0/getting-started/'
     ) {
       const articleContainer = $('.quickstart-guide');
       articleContainer.addClass('getting-started-full-width');
