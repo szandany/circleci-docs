@@ -33,7 +33,11 @@ window.OptimizelyClient.getVariationName({
 }).then((variation) => {
   if (variation === 'treatment') {
     // Used to expand the container width for the content
-    if (window.location.pathname === '/docs/2.0/getting-started/') {
+    if (
+      window.location.pathname === '/docs/2.0/getting-started/' ||
+      window.location.pathname ===
+        '/DD-456/finalize-getting-started-experiment-preview/2.0/getting-started/'
+    ) {
       const articleContainer = $('.quickstart-guide');
       articleContainer.addClass('getting-started-full-width');
     }
