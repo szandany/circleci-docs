@@ -157,6 +157,11 @@ and 2.x-specific information) check out the previous instructions [here](https:/
 ## Testing Checklist 
 To allow for more flexibility, please find the checklist inside our confluence [space](https://circleci.atlassian.net/l/c/Tm5oiCFF).
 
+## Insights
+
+[![InsightsSnapshot](https://dl.circleci.com/insights-snapshot/gh/circleci/circleci-docs/master/build-deploy/badge.svg)](https://app.circleci.com/insights/github/circleci/circleci-docs/workflows/build-deploy?branch=master)
+
+
 ## License Information
 Documentation (guides, references, and associated images) is licensed as
 Creative Commons Attribution-NonCommercial-ShareAlike CC BY-NC-SA. The full
