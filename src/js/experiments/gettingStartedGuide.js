@@ -22,7 +22,7 @@ function addNewBadgeToSidebar() {
 function showHomePageBadges() {
   const isGettingStartedPage =
     window.location.pathname ==
-    '/DD-450/getting-started-experiment-boilerplate-preview/2.0/getting-started/';
+    '/DD-450/getting-started-experiment-boilerplate-preview/';
   if (isGettingStartedPage) {
     $('.getting-started-experiment-badges').show();
   }
