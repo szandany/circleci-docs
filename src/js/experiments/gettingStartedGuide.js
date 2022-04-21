@@ -3,17 +3,20 @@ import { reconstructToC } from '../site/toc';
 
 function addNewBadgeToSidebar() {
   const isGettingStartedPage =
-    window.location.pathname == '/docs/2.0/getting-started/';
+    window.location.pathname ==
+    '/DD-544/promote-language-guides-preview/2.0/getting-started/';
   const NEW_SIDEBAR_HTML = `
     <a class="${isGettingStartedPage ? 'active' : ''}"
        style="display: flex; align-items: center"
-       href="/docs/2.0/getting-started/"
+       href="/DD-544/promote-language-guides-preview/2.0/getting-started/"
        data-section="getting-started" data-proofer-ignore="">
       <span>Quickstart Guide</span>
       <span class="getting-started-new-badge"> NEW </span>
     </a>
 `;
-  $("li > a[href='/docs/2.0/getting-started/']").replaceWith(NEW_SIDEBAR_HTML);
+  $(
+    "li > a[href='/DD-544/promote-language-guides-preview/2.0/getting-started/']",
+  ).replaceWith(NEW_SIDEBAR_HTML);
 }
 
 function showHomePageBadges() {
@@ -51,7 +54,10 @@ function setUpTracking() {
 
 function displayGettingStartedContent() {
   // Used to expand the container width for the experiment content
-  if (window.location.pathname === '/docs/2.0/getting-started/') {
+  if (
+    window.location.pathname ===
+    '/DD-544/promote-language-guides-preview/2.0/getting-started/'
+  ) {
     const articleContainer = $('.your-first-green-build');
     articleContainer.addClass('getting-started-full-width');
 
@@ -73,7 +79,10 @@ function displayGettingStartedContent() {
 }
 
 function displayFirstGreenBuildContent() {
-  if (window.location.pathname === '/docs/2.0/getting-started/') {
+  if (
+    window.location.pathname ===
+    '/DD-544/promote-language-guides-preview/2.0/getting-started/'
+  ) {
     const control = $('.control');
     control.css('display', 'block');
     // ToC is hidden due to using getting-started-guide-experimental for the layout, setting the css to ensure that the ToC is present in control variation
