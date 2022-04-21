@@ -3,21 +3,26 @@ import { reconstructToC } from '../site/toc';
 
 function addNewBadgeToSidebar() {
   const isGettingStartedPage =
-    window.location.pathname == '/docs/2.0/getting-started/';
+    window.location.pathname ==
+    '/DD-450/getting-started-experiment-boilerplate-preview/2.0/getting-started/';
   const NEW_SIDEBAR_HTML = `
     <a class="${isGettingStartedPage ? 'active' : ''}"
        style="display: flex; align-items: center"
-       href="/docs/2.0/getting-started/"
+       href="/DD-450/getting-started-experiment-boilerplate-preview/2.0/getting-started/"
        data-section="getting-started" data-proofer-ignore="">
       <span>Quickstart Guide</span>
       <span class="getting-started-new-badge"> NEW </span>
     </a>
 `;
-  $("li > a[href='/docs/2.0/getting-started/']").replaceWith(NEW_SIDEBAR_HTML);
+  $(
+    "li > a[href='/DD-450/getting-started-experiment-boilerplate-preview/2.0/getting-started/']",
+  ).replaceWith(NEW_SIDEBAR_HTML);
 }
 
 function showHomePageBadges() {
-  const isGettingStartedPage = window.location.pathname == '/docs/';
+  const isGettingStartedPage =
+    window.location.pathname ==
+    '/DD-450/getting-started-experiment-boilerplate-preview/2.0/getting-started/';
   if (isGettingStartedPage) {
     $('.getting-started-experiment-badges').show();
   }
@@ -51,7 +56,10 @@ function setUpTracking() {
 
 function displayGettingStartedContent() {
   // Used to expand the container width for the experiment content
-  if (window.location.pathname === '/docs/2.0/getting-started/') {
+  if (
+    window.location.pathname ===
+    '/DD-450/getting-started-experiment-boilerplate-preview/2.0/getting-started/'
+  ) {
     const articleContainer = $('.your-first-green-build');
     articleContainer.addClass('getting-started-full-width');
   }
