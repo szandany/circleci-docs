@@ -1,0 +1,144 @@
+= Show all admonitions
+:page-layout: classic-docs
+:page-liquid:
+:icons: font
+:toc: macro
+:toc-title:
+
+== Admonition paragraphs
+
+NOTE: Here is a some information in note form
+
+IMPORTANT: Here is some important information
+
+TIP: Here is a tip
+
+CAUTION: Here is a caution
+
+WARNING: This is a warning
+
+---
+
+== Admonition blocks
+
+These don't look so great.
+
+[NOTE]
+.A longer note
+====
+Here is a some information in note form with a code snippet and a list.
+
+1. step 1
+2. step 2
+3. step 3
+
+```yml
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/node:17.2.0 # the primary container, where your job's commands are run
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
+```
+====
+
+[IMPORTANT]
+.A longer important block
+====
+Here is a some information in note form with a code snippet and a list.
+
+1. step 1
+2. step 2
+3. step 3
+
+```yml
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/node:17.2.0 # the primary container, where your job's commands are run
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
+```
+====
+
+[TIP]
+.A longer tip
+====
+Here is a some information in note form with a code snippet and a list.
+
+1. step 1
+2. step 2
+3. step 3
+
+```yml
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/node:17.2.0 # the primary container, where your job's commands are run
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
+```
+====
+
+[CAUTION]
+.A longer caution
+====
+Here is a some information in note form with a code snippet and a list.
+
+1. step 1
+2. step 2
+3. step 3
+
+```yml
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/node:17.2.0 # the primary container, where your job's commands are run
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
+```
+====
+
+[WARNING]
+.A longer warning
+====
+Here is a some information in note form with a code snippet and a list.
+
+1. step 1
+2. step 2
+3. step 3
+
+```yml
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/node:17.2.0 # the primary container, where your job's commands are run
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
+```
+====
