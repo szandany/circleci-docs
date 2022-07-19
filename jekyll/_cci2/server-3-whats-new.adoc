@@ -4,7 +4,7 @@ version:
 - Server v3.x
 - Server Admin
 ---
-= CircleCI Server v3.x What's New
+= CircleCI Server v3.x What\'s New
 :page-layout: classic-docs
 :page-liquid:
 :icons: font
